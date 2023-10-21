@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis Result</h1>
+        <p><strong>Sentence:</strong> {{ sentence }}</p>
+        <p><strong>Sentiment Scores:</strong></p>
+        <ul>
+            <li><strong>Positive:</strong> {{ sentiment_scores.pos }}</li>
+            <li><strong>Neutral:</strong> {{ sentiment_scores.neu }}</li>
+            <li><strong>Negative:</strong> {{ sentiment_scores.neg }}</li>
+            <li><strong>Compound:</strong> {{ sentiment_scores.compound }}</li>
+        </ul>
+    </div>
+</body>
+</html>
